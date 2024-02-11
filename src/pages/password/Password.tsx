@@ -8,6 +8,13 @@ const PasswordGenerator = () => {
   return (
     <>
       <Box sx={passwordGeneratorStyles.mainContainer}>
+      <Box sx={passwordGeneratorStyles.navbarSmallContainer}>
+        <Box sx={passwordGeneratorStyles.navbarChildContainer}>
+          <Typography sx={passwordGeneratorStyles.qrCodeGeneratorText}>
+            Password Generator
+          </Typography>
+        </Box>
+      </Box>
         <Sidebar />
         <Box sx={passwordGeneratorStyles.rightBodyContainer}>
           <Box sx={passwordGeneratorStyles.navbarContainer}>

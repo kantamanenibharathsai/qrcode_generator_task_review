@@ -1,25 +1,35 @@
 const homeStyles = {
   homeContainer: {
-    height: "100vh",
+    height: {xs:"auto", lg:"100vh"},
     width: "100%",
     display: "flex",
+    flexDirection: { xs: "column", lg: "row" },
   },
 
   paddingContainer: {
-    p: 3,
+    p: { xs: 3, lg: 3 },
   },
 
   rightBodyContainer: {
-    width: "81%",
+    width: { xs: "100%", lg: "81%" },
     display: "flex",
     flexDirection: "column",
+  },
+
+  navbarSmallContainer: {
+    height: "75px",
+    width: "100%",
+    bgcolor: "#679F38",
+    display: { xs: "flex", lg: "none" },
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   navbarContainer: {
     height: "75px",
     width: "100%",
     bgcolor: "#679F38",
-    display: "flex",
+    display: { xs: "none", lg: "flex" },
     alignItems: "center",
     justifyContent: "center",
   },
@@ -37,10 +47,14 @@ const homeStyles = {
 
   rightBodyChildContainer: {
     display: "flex",
+    flexDirection: { xs: "column", md: "row" },
+    alignItems: { xs: "center", md: "flex-start" }
   },
 
   tabsContainer: {
     flexGrow: 1,
+    width: { xs: "100%", md: "auto" },
+    pt: "25px"
   },
 
   tabsParentContainer: {
@@ -53,10 +67,11 @@ const homeStyles = {
   },
 
   qrContainer: {
-    width: "30%",
-    border: "1px solid black",
+    width: { xs: "100%", sm: "100%", md: "37%", lg: "30%" },
     height: "calc(100vh - 60px)",
-    padding: "30px 25px",
+    padding: { xs: "20px 20px", md: "30px 25px" },
+    margin: "auto",
+    border: {xs:"none", lg:"1px solid black"}
   },
 
   previewText: {

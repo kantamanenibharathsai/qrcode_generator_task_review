@@ -11,10 +11,13 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 500,
+  width: {xs:"93%", sm:400, md:500},
   bgcolor: "background.paper",
   boxShadow: 24,
-  p: 4,
+  p: {xs:1, sm:2, md:4},
+  py: {xs: 3, sm: 3},
+  borderRadius: "14px",
+  px: {xs: 1.5}
 };
 
 interface IState {

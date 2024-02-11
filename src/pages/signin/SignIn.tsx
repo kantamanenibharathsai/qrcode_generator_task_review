@@ -35,6 +35,13 @@ const SignIn = () => {
 
   return (
     <Box sx={signInStyles.mainContainer}>
+       <Box sx={signInStyles.navbarSmallContainer}>
+        <Box sx={signInStyles.navbarChildContainer}>
+          <Typography sx={signInStyles.qrCodeGeneratorText}>
+            Sign In
+          </Typography>
+        </Box>
+      </Box>
       <Sidebar />
       <Box sx={signInStyles.rightBodyContainer}>
         <Box sx={signInStyles.navbarContainer}>

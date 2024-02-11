@@ -1,12 +1,12 @@
 const modalStyles = {
   passwordGenerateHeadingText: {
-    fontSize: "15px",
+    fontSize: {xs:"12px", sm:"15px"},
     fontWeight: "700",
     color: "black",
   },
 
   passwordTextField: {
-    width: "380px",
+    width: {xs:"99.8%"},
   },
 
   generatePasswordBtn: {

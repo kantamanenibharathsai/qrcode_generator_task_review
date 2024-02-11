@@ -1,14 +1,14 @@
 const sidebarStyles = {
   sidebarContainer: {
-    width: "19%",
-    height: "100vh",
+    width: {xs:"100%", lg:"19%"},
+    minHeight: {xs:"auto", lg:"100vh"},
     display: "flex",
     flexDirection: "column",
-    gap: "20px",
-    pt: "50px",
-    border: "1px solid black",
+    gap: {xs:"0px", lg:"20px"},
+    pt: {xs:"10px", lg:"50px"},
     justifyContent: "space-between",
-    pb: "30px",
+    pb: {xs:"1px", lg:"30px"},
+    border: {xs:"none", lg:"1px solid black"}
   },
 
   listContainer: {
@@ -16,7 +16,7 @@ const sidebarStyles = {
     bgcolor: "background.paper",
     display: "flex",
     flexDirection: "column",
-    gap: "15px",
+    gap: {xs:"0px", lg:"15px"},
   },
 
   listItem: {

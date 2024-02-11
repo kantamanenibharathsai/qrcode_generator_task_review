@@ -1,22 +1,31 @@
 const signInStyles = {
   mainContainer: {
-    height: "100vh",
+    minHeight: "100vh",
     width: "100%",
     display: "flex",
+    flexDirection: { xs: "column", lg: "row" },
+  },
+
+  navbarSmallContainer: {
+    height: "75px",
+    width: "100%",
+    bgcolor: "#679F38",
+    display: { xs: "flex", lg: "none" },
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   rightBodyContainer: {
-    width: "81%",
+    width: {xs:"100%", lg:"81%"},
     display: "flex",
     flexDirection: "column",
-    // border: "3px solid yellow",
   },
 
   navbarContainer: {
     height: "75px",
     width: "100%",
     bgcolor: "#679F38",
-    display: "flex",
+    display: { xs: "none", lg: "flex" },
     alignItems: "center",
     justifyContent: "center",
   },
@@ -33,12 +42,11 @@ const signInStyles = {
   },
 
   mainBodyContainer: {
-    // height: "calc(100vh - 70px)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    // border: "1px solid red",
-    pt: "70px",
+    pt: {xs:"20px", lg:"70px"},
+    px: {xs:"10px", lg: "0px"}
   },
 
   centerContainer: {

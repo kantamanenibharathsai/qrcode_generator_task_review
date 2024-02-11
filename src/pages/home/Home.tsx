@@ -68,6 +68,13 @@ const Home = () => {
 
   return (
     <Box sx={homeStyles.homeContainer}>
+      <Box sx={homeStyles.navbarSmallContainer}>
+        <Box sx={homeStyles.navbarChildContainer}>
+          <Typography sx={homeStyles.qrCodeGeneratorText}>
+            QR Code Generator
+          </Typography>
+        </Box>
+      </Box>
       <Sidebar />
       <Box sx={homeStyles.rightBodyContainer}>
         <Box sx={homeStyles.navbarContainer}>
@@ -127,7 +134,6 @@ const Home = () => {
             <Box sx={homeStyles.qrActualContainer}>
               <Box sx={homeStyles.qrCodeWrapperContainer}>
                 <QRCode
-                  size={200}
                   style={{ height: "180px", maxWidth: "100%", width: "180px" }}
                   value={qrText}
                   viewBox={`0 0 200 200`}
