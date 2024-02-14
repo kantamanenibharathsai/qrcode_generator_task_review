@@ -4,12 +4,10 @@ const passwordGeneratorStyles = {
     width: "100%",
     display: "flex",
     flexDirection: { xs: "column", lg: "row" },
-    // border: "10px solid green"
   },
 
   rightBodyContainer: {
     width: {xs:"100%", lg:"81%"},
-    // border: "13px solid pink"
   },
 
   navbarSmallContainer: {

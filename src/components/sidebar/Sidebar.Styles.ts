@@ -41,7 +41,7 @@ const sidebarStyles = {
   },
 
   button: {
-    width: "200px",
+    pl: "0px"
   },
 
   profileContainer: {
